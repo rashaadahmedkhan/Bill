@@ -18,7 +18,10 @@ func updateMenu(y map[string]int) {
 func main() {
     name := "rashaad"
     name = updateName(name)
+    fmt.Println("Memory address of name is:", &name)
     fmt.Println(name)
+
+    m := &name
 
     menu := map[string] int {
         "oreo": 10,
